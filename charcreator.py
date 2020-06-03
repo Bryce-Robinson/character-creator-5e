@@ -1,5 +1,4 @@
-from classes.py import Character
-import random, time
+import random, time, classes
 #lists
 list_name = ["race", "class"]
 races = ["Human", "Elf", "Dwarf", "Gnome", "Halfling", "Dragonborn", "Half-Elf", "Half-Orc", "Tiefling"]
