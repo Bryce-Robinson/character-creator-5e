@@ -2,10 +2,12 @@ import random, time, classes
 #lists
 list_name = ["race", "class"]
 races = ["Human", "Elf", "Dwarf", "Gnome", "Halfling", "Dragonborn", "Half-Elf", "Half-Orc", "Tiefling"]
-races_subraces ={"Human":[], "Elf":[], "Dwarf":[], "Gnome":[], "Halfling":[], "Dragonborn":[], "Half-Elf":[], "Half-Orc"[], "Tiefling":[]}
+races_subraces ={"Human":[], "Elf":["High Elf", "Wood Elf", "Drow"], "Dwarf":["Hill Dwarf", "Mountain Dwarf"], "Gnome":["Forest", "Rock"], "Halfling":["Lightfoot", "Stout"], "Dragonborn":[], "Half-Elf":[], "Half-Orc":[], "Tiefling":[]}
+
 class_ = ["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"]
-class_subclass = {"Barbarian":["","",""], "Bard":[], "Cleric":[], "Druid":[], "Fighter":[], "Monk":[], "Paladin":[], "Ranger":[], "Rogue":[], "Sorcerer":[], "Warlock":[], "Wizard":[]}
-character 
+class_subclass = {"Barbarian":["Path of the Berzerker","Path of the Totem Warrior"], "Bard":["College of Lore", "College of Valor", "College of Shadows"], "Cleric":["Knowledge Domain", "Life Domain", "Light Domain", "Nature Domain", "Tempest Domain", "Trickery Domain","Warrior Domain"], "Druid":["Circle of the Land", "Circle of the Moon"], "Fighter":["Champion", "Battle Master", "Eldritch Knight"], "Monk":["Way of the Open Hand", "Way of the Shadow", "Way of the 4 Elements"], "Paladin":["Oath of Devotion","Oath of the Ancients", "Oath of Vengeance"], "Ranger":["Hunter", "Beastmaster"], "Rogue":["Thief", "Assasin", "Arcane Trickster"], "Sorcerer":["Draconic Bloodline", "Wild Magic"], "Warlock":["Pact of the Chain", "Pact of the Blade", "Pact of the Tome"], "Wizard":["School of Abjuration", "School of Conjuration", "School of Divination", "School of Enchantment", "School of Evocation", "School of Illusion", "School of Necromancy", "School of Transmutation"]} 
+
+
 #variables
 welcome_message = "Welcome to the Dungeon's and Dragons Command-line Character Generator!\nFor the sake of simplicity and realistic common characters this program will only be using content from the Players Handbook. \nIf you want to create specific characters from the other expansions then you will have to use something else."
 
