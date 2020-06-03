@@ -28,13 +28,13 @@ class Character:
             gender = "Female"
         self.gender = gender
     
-    def add_name():
+    def add_name(self, first_name, last_name):
         pass
     
-    def add_class():
+    def add_class(self, class_name):
         pass
     
-    def add_sub_class():
+    def add_sub_class(self, class_name):
         pass
     
     def add_background():

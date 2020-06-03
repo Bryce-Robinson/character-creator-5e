@@ -2,11 +2,10 @@ import random, time, classes
 #lists
 list_name = ["race", "class"]
 races = ["Human", "Elf", "Dwarf", "Gnome", "Halfling", "Dragonborn", "Half-Elf", "Half-Orc", "Tiefling"]
+races_subraces ={"Human":[], "Elf":[], "Dwarf":[], "Gnome":[], "Halfling":[], "Dragonborn":[], "Half-Elf":[], "Half-Orc"[], "Tiefling":[]}
 class_ = ["Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk", "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"]
-sub_cleric = []
-sub_fighter = []
-
-
+class_subclass = {"Barbarian":["","",""], "Bard":[], "Cleric":[], "Druid":[], "Fighter":[], "Monk":[], "Paladin":[], "Ranger":[], "Rogue":[], "Sorcerer":[], "Warlock":[], "Wizard":[]}
+character 
 #variables
 welcome_message = "Welcome to the Dungeon's and Dragons Command-line Character Generator!\nFor the sake of simplicity and realistic common characters this program will only be using content from the Players Handbook. \nIf you want to create specific characters from the other expansions then you will have to use something else."
 
