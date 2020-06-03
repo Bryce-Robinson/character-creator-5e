@@ -1,6 +1,8 @@
 # character-creator-5e
-<h1>This is a beginner's attempt at a real project.</h1> 
-<p>cut me some slack :)</p>
+#### This is a beginner's attempt at a real project. 
+<small><small>cut me some slack :)</small></small>
+<!-- if you see this i am so sorry -->
+<p>see link 
 
-see link
 https://github.com/Bryce-Robinson/character-creator-5e/projects
+</p>
