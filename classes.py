@@ -28,8 +28,9 @@ class Character:
             gender = "Female"
         self.gender = gender
     
-    def add_name(self, first_name, last_name):
-        pass
+    def add_name(self, first_name, last_name=None):
+        name = "{} {}"
+        self.name = name.format(first_name, last_name)
     
     def add_class(self, class_name):
         pass
@@ -37,9 +38,9 @@ class Character:
     def add_sub_class(self, class_name):
         pass
     
-    def add_background():
-        pass
-    
+    def add_background(self, background):
+        self.background = background
+        
     def add_alignment(self, word1, word2):
         if word1 is "Lawful" or "Neutral" or "Chaotic":
             if word2 is "Good" or "Neutral" or "Evil":
