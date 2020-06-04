@@ -1,6 +1,6 @@
 #--------------------------------------------------------------CLASSES---------------------------------------------------------------------------
 class Character:
-    def __init__(self, race=None, gender=None, name=None, class_name=None, sub_class=None, background=None, personality_traits=None, alignment=None, languages=None, stat_dict={"Str":0, "Dex":0, "Con":0, "Wis":0, "Int":0, "Cha":0}, level=None):
+    def __init__(self, race=None, gender=None, name=None, class_name=None, sub_class=None, background=None, personality_traits=None, alignment=None, languages=None, stat_dict={"Str":0, "Dex":0, "Con":0, "Int":0, "Wis":0, "Cha":0}, level=None):
         self.race = race
         self.gender = gender
         self.name = name
@@ -52,7 +52,8 @@ class Character:
     
     def set_stat(self, stat_type, stat_value):
         if stat_type is ("Str" or "Dex" or "Con" or "Wis" or "Int" or "Cha"):
+            self.stat_dict.find(stat_value)
             if (stat_value > 0) and (stat_value <= 18):
-                self.stat_dict.update(stat_type= stat_value)
+                self.stat_dict.update(stat_type.value(stat_value))
 
         else: print("Error, invalid stat type detected.")
