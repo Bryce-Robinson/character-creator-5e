@@ -1,3 +1,4 @@
+PYTHONDONTWRITEBYTECODE=" "
 import random
 #---------------------STAT ROLL SYSTEMS-----------------------------
 def three_d_six_strict():

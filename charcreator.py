@@ -12,18 +12,18 @@ class_subclass = {"Barbarian":["Path of the Berzerker", "Path of the Totem Warri
 #variables
 welcome_message = "Welcome to the Dungeon's and Dragons Command-line Character Generator!\nFor the sake of simplicity and realistic common characters this program will only be using content from the Players Handbook. \nIf you want to create specific characters from the other expansions then you will have to use something else."
 #AT THE END UNCOMMENT BELOW FOR THE SPLASH SCREEN THING
-#print("                                                       ")
-#print("  ____________     _____    _____      ____________    ")
-#print("  \           \   |\    \   \    \     \           \   ")
-#print("   \           \   \\\    \   |    |     \           \  ")
-#print("    |    /\     |   \\\    \  |    |      |    /\     | ")
-#print("    |   |  |    |    \|    \ |    |      |   |  |    | ")
-#print("    |    \/     |     |     \|    |      |    \/     | ")
-#print("   /           /|    /     /\      \    /           /| ")
-#print("  /___________/ |   /_____/ /______/|  /___________/ | ")
-#print(" |           | /   |      | |     | | |           | /  ")
-#print(" |___________|/    |______|/|_____|/  |___________|/   ")
-#print("                                                       ")
+print(r"""                                                       
+  ____________     _____    _____      ____________    
+  \           \   |\    \   \    \     \           \   
+   \           \   \\    \   |    |     \           \ 
+    |    /\     |   \\    \  |    |      |    /\     |
+    |   |  |    |    \|    \ |    |      |   |  |    | 
+    |    \/     |     |     \|    |      |    \/     | 
+   /           /|    /     /\      \    /           /| 
+  /___________/ |   /_____/ /______/|  /___________/ | 
+ |           | /   |      | |     | | |           | /  
+ |___________|/    |______|/|_____|/  |___________|/   
+                                                      """) 
 
 #--------------------------------------------------------------FUNCTIONS--------------------------------------------------------------------------
 
@@ -38,17 +38,16 @@ def choice_selector(choice_list, list_name):
     i = 1
     for options in choice_list:
         print("[" + str(i) + "] " + options)
-        time.sleep(0.12)
+        time.sleep(0.04)
         i += 1
     time.sleep(0.5)
     response = int(input("\nType in the corresponding number for the {} you would like to choose.\n>".format(list_name))) 
     response -= 1
     time.sleep(0.5)
-    if response > len(choice_list)-1 or response < 1:
-        print("Out of bounds. The highest legit option was " + str(len(choice_list)) + "\n Try again.")
-        
-        time.sleep(2)
-        response = len(choice_list)
+    if response > len(choice_list) or response < 0:
+        print(len(choice_list))
+        print("Out of bounds. The highest legit option was " + str(len(choice_list)) + "and the lowest will always be 1." + "\nTry again.")
+        time.sleep(.2)
         #print("current state of your input is :" + str(response))
         choice_selector(choice_list, list_name)
     print("You have chosen the " + choice_list[response] + " " + str(list_name) + ".")
