@@ -1,3 +1,4 @@
+PYTHONDONTWRITEBYTECODE=" "
 import random, time, classes
 #lists
 list_name = ["race", "class"]
@@ -10,7 +11,7 @@ class_subclass = {"Barbarian":["Path of the Berzerker", "Path of the Totem Warri
 
 #variables
 welcome_message = "Welcome to the Dungeon's and Dragons Command-line Character Generator!\nFor the sake of simplicity and realistic common characters this program will only be using content from the Players Handbook. \nIf you want to create specific characters from the other expansions then you will have to use something else."
-
+#AT THE END UNCOMMENT BELOW FOR THE SPLASH SCREEN THING
 #print("                                                       ")
 #print("  ____________     _____    _____      ____________    ")
 #print("  \           \   |\    \   \    \     \           \   ")
